@@ -1,6 +1,6 @@
 # Zeus Notebook
 
-A Python notebook that runs completely on your browser using pyodide with an integrated chat interface with GPT-4 or GPT-3.5. The integrated chat interface would allow the user to easily move code to the chat to ask question and vice versa.
+A Python notebook that runs completely in your browser using Pyodide, with an integrated chat interface featuring GPT-4 or GPT-3.5. This chat interface allows users to seamlessly move code from the notebook to the chat to ask questions and vice versa.
 
 ## Demo
 [Live Demo Zeus Notebook](https://zeusnotebook.com)
