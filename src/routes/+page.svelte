@@ -18,6 +18,12 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Zeus Notebook</title>
+	<meta name="robots" content="noindex nofollow" />
+	<html lang="en" />
+</svelte:head>
+
 <div class="h-screen split-pane-container">
 	<Splitpanes theme="modern-theme">
 		<Pane size={60} minSize={20}>
