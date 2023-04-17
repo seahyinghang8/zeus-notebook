@@ -131,7 +131,7 @@
 		{apiKeyIssue}
 	/>
 </div>
-<div class="flex flex-col h-screen z-0">
+<div class="flex flex-col h-full z-0">
 	<!-- Messages -->
 	<Messages bind:messages on:copyToNotebook {isGeneratingResponse} />
 	<!-- User Input -->

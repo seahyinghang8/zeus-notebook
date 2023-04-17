@@ -140,7 +140,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="py-3 px-6 h-screen overflow-y-auto"
+	class="py-3 px-6 h-full overflow-y-auto"
 	bind:this={notebookElement}
 	on:click={(ev) => {
 		if (ev.target === notebookElement) {

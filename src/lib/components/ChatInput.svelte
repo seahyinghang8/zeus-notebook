@@ -54,6 +54,7 @@
 	<SendButton
 		on:click={() => {
 			dispatch('send', value);
+			textAreaHeight = 0;
 		}}
 		{disabled}
 	/>

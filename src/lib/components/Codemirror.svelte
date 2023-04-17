@@ -16,13 +16,13 @@
 		rectangularSelection,
 		crosshairCursor,
 		lineNumbers,
-		ViewUpdate,
+		type ViewUpdate,
 		placeholder as placeholderExt
 	} from '@codemirror/view';
 	import { EditorState, StateEffect, type Extension } from '@codemirror/state';
 	import { closeBrackets, closeBracketsKeymap } from '@codemirror/autocomplete';
 	import { indentWithTab, defaultKeymap, history, historyKeymap } from '@codemirror/commands';
-	import { searchKeymap, highlightSelectionMatches } from '@codemirror/search';
+	import { highlightSelectionMatches } from '@codemirror/search';
 	import { lintKeymap } from '@codemirror/lint';
 	import {
 		defaultHighlightStyle,

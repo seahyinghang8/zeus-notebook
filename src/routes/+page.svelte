@@ -6,6 +6,7 @@
 
 	let chatComponent: SvelteComponent | undefined;
 	let notebookComponent: SvelteComponent | undefined;
+	let windowInnerWidth: number;
 
 	function copyToChat(ev: CustomEvent) {
 		let text = ev.detail;
@@ -18,6 +19,8 @@
 	}
 </script>
 
+<svelte:window bind:innerWidth={windowInnerWidth} />
+
 <svelte:head>
 	<title>Zeus Notebook</title>
 	<meta name="robots" content="noindex nofollow" />
@@ -25,7 +28,7 @@
 </svelte:head>
 
 <div class="h-screen split-pane-container">
-	<Splitpanes theme="modern-theme">
+	<Splitpanes theme="modern-theme" horizontal={windowInnerWidth < 768}>
 		<Pane size={60} minSize={20}>
 			<Notebook bind:this={notebookComponent} on:copyToChat={copyToChat} />
 		</Pane>
